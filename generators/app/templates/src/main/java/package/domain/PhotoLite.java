@@ -72,34 +72,6 @@ public class PhotoLite implements Serializable {
     @Column(name = "thumbnailx_2_sha_1", length = 40)
     private String thumbnailx2Sha1;
 
-
-    /**
-     * Extracted EXIF from the photo (LAZY)
-     */
-//    @Lazy
-    @Lob
-    @Type(type = "org.hibernate.type.TextType")
-    @Column(name = "exif")
-    private String exif;
-
-    /**
-     * Extracted text by the Tesseract OCR (LAZY)
-     */
-//    @Lazy
-    @Lob
-    @Type(type = "org.hibernate.type.TextType")
-    @Column(name = "extracted_text")
-    private String extractedText;
-
-    /**
-     * Detected objects into the photo (ImageAI, Tensorflow ...) (LAZY)
-     */
-//    @Lazy
-    @Lob
-    @Type(type = "org.hibernate.type.TextType")
-    @Column(name = "detected_objects")
-    private String detectedObjects;
-
     @ManyToOne
     @JsonIgnoreProperties("photos")
     private User user;
@@ -217,47 +189,7 @@ public class PhotoLite implements Serializable {
     public void setThumbnailx2Sha1(String thumbnailx2Sha1) {
         this.thumbnailx2Sha1 = thumbnailx2Sha1;
     }
-
-
-    public String getExif() {
-        return exif;
-    }
-
-    public PhotoLite exif(String exif) {
-        this.exif = exif;
-        return this;
-    }
-
-    public void setExif(String exif) {
-        this.exif = exif;
-    }
-
-    public String getExtractedText() {
-        return extractedText;
-    }
-
-    public PhotoLite extractedText(String extractedText) {
-        this.extractedText = extractedText;
-        return this;
-    }
-
-    public void setExtractedText(String extractedText) {
-        this.extractedText = extractedText;
-    }
-
-    public String getDetectedObjects() {
-        return detectedObjects;
-    }
-
-    public PhotoLite detectedObjects(String detectedObjects) {
-        this.detectedObjects = detectedObjects;
-        return this;
-    }
-
-    public void setDetectedObjects(String detectedObjects) {
-        this.detectedObjects = detectedObjects;
-    }
-
+    
     public User getUser() {
         return user;
     }

@@ -48,15 +48,6 @@
             <column name="thumbnailx_2_sha_1" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
-            <column name="exif" type="${clobType}">
-                <constraints nullable="true" />
-            </column>
-            <column name="extracted_text" type="${clobType}">
-                <constraints nullable="true" />
-            </column>
-            <column name="detected_objects" type="${clobType}">
-                <constraints nullable="true" />
-            </column>
             <column name="created_at" type="datetime">
                 <constraints nullable="false" />
             </column>
@@ -102,9 +93,6 @@
             <column name="thumbnailx_2" type="blob"/>
             <column name="thumbnailx_2_content_type" type="string"/>
             <column name="thumbnailx_2_sha_1" type="string"/>
-            <column name="exif" type="clob"/>
-            <column name="extracted_text" type="clob"/>
-            <column name="detected_objects" type="clob"/>
             <column name="created_at" type="datetime"/>
             <column name="updated_at" type="datetime"/>
             <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here, do not remove-->
