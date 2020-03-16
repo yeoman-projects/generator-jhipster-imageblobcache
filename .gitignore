@@ -9,5 +9,4 @@ atlassian-ide-plugin.xml
 test/temp/
 *debug.log*
 .vscode
-README.md
 generators/app/templates/src/main/java/package/indexation/tessdata/*
