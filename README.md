@@ -14,6 +14,8 @@ As this is a [JHipster](https://www.jhipster.tech/) module, we expect you have J
 
 - [Installing JHipster](https://www.jhipster.tech/installation/)
 
+Work only with Angular (Not React)
+
 # Installation
 
 ## With NPM
@@ -35,7 +37,7 @@ npm update -g generator-jhipster-imageblobcache
 To install this module:
 
 ```bash
-yarn global add generator-jhipster-imageBlobIndexation
+yarn global add generator-jhipster-imageblobcache
 ```
 
 To update this module:
@@ -45,6 +47,8 @@ yarn global upgrade generator-jhipster-imageblobcache
 ```
 
 # Usage
+
+This module allows you to use ImageBlob with cache management.
 
 # License
 
