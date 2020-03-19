@@ -50,6 +50,12 @@ yarn global upgrade generator-jhipster-imageblobcache
 
 This module allows you to use ImageBlob with cache management.
 
+# TODO
+
+• Make working with react framework
+• Translation system
+• Make working with other formats than ImageBlob
+
 # License
 
 [npm-image]: https://img.shields.io/npm/v/generator-jhipster-imageBlobIndexation.svg
