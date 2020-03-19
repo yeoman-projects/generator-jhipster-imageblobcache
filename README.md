@@ -53,7 +53,9 @@ This module allows you to use ImageBlob with cache management.
 # TODO
 
 • Make working with react framework
+
 • Translation system
+
 • Make working with other formats than ImageBlob
 
 # License
